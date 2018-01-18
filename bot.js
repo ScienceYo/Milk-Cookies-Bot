@@ -32,7 +32,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === 'mc! version') {
+    if (message.content === 'mc! info') {
     	message.channel.send('My name is Milk & Cookies Bot. I was made by Science Yo#1743 in one day. I do alot of useless stuff but I think you will enjoy it!');
   	}
 });
