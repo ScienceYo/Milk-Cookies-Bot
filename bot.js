@@ -20,5 +20,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'cookie') {
+    	message.channel.send('Here is a picture of a cookie:');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'version') {
+    	message.channel.send('Version 0.1 A');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
