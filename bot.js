@@ -20,7 +20,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc! cookie') {
-    	message.channel.send('Here is a picture of a cookie:');
+    	message.channel.send('Here is a picture of a cookie: https://goo.gl/qqWfGP');
   	}
 });
 
@@ -30,6 +30,12 @@ client.on('message', message => {
   	}
 });
 
+
+client.on('message', message => {
+    if (message.content === 'mc! version') {
+    	message.channel.send('My name is Milk & Cookies Bot. I was made by Science Yo#1743 in one day. I do alot of useless stuff but I think you will enjoy it!');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
