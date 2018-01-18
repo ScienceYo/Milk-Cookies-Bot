@@ -16,7 +16,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc!') {
-    	message.reply('Thank you for using this bot, find the list of commands on the website.');
+    	message.channel.send('Thank you for using this bot, find the list of commands on the website.');
   	}
 });
 
