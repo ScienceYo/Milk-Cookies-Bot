@@ -9,28 +9,29 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'milk') {
+    if (message.content === 'mc! milk') {
     	message.channel.send('Here is a picture of milk:');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === 'mc!') {
     	message.reply('Thank you for using this bot, find the list of commands on the website.');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'cookie') {
+    if (message.content === 'mc! cookie') {
     	message.channel.send('Here is a picture of a cookie:');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'version') {
+    if (message.content === 'mc! version') {
     	message.channel.send('Version 0.1 A');
   	}
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
