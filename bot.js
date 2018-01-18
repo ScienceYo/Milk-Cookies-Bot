@@ -4,7 +4,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
     
-    
+bot.user.setStatus(dnd); 
+bot.user.setGame('with cookie dough');
     
 });
 
