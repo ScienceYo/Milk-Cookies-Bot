@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'mc! milk') {
-    	message.channel.send('Here is a picture of milk:');
+    	message.channel.send('Here is a picture of some milk:');
   	}
 });
 
