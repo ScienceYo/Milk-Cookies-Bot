@@ -1,9 +1,13 @@
-const Discord = require('discord.js');
+zzzzzconst Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
     
+});
+
+
+client.user.setStatus('o')
 });
 
 client.user.setGame('mc! help')
