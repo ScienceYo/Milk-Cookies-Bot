@@ -13,8 +13,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'mc!') {
-    	message.channel.send('Thank you for using this bot, find the list of commands on the website.');
+    if (message.content === 'mc! help') {
+    	message.channel.send('```List of commands: \n mc! help: Displays this menu \n mc! cookie: Displays a picture of a cookie. \n mc! milk: Displays a picture of milk \n mc! version: Bot version \n mc! info: Shows information about the bot \n ```');
   	}
 });
 
