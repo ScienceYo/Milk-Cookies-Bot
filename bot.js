@@ -26,7 +26,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc! version') {
-    	message.channel.send('Version 0.12 A');
+    	message.channel.send('Version 0.18 A');
   	}
 });
 
