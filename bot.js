@@ -47,12 +47,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'mc! spam') {
-    	message.channel.send('spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam');
-  	}
-});
-
-client.on('message', message => {
     if (message.content === 'mc! version') {
     	message.channel.send('Version 0.18 A');
   	}
