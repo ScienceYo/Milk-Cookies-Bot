@@ -24,13 +24,31 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc! help') {
-    	message.channel.send('```List of commands: \n mc! help: Displays this menu \n mc! cookie: Displays a picture of a cookie. \n mc! milk: Displays a picture of milk \n mc! version: Bot version \n mc! info: Shows information about the bot \n mc! discord: discord link ```');
+    	message.channel.send('```List of commands: \n mc! help: Displays this menu. \n mc! cookie: Displays a picture of a cookie. \n mc! milk: Displays a picture of milk. \n mc! version: Bot version. \n mc! info: Shows information about the bot. \n mc! discord: discord link. \n mc! agree: Make the bot agree. \n mc! disagree: Make the bot disagree. ```');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'mc! cookie') {
     	message.channel.send('Here is a picture of a cookie: https://goo.gl/qqWfGP');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'mc! agree') {
+    	message.channel.send('I agree!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'mc! disagree') {
+    	message.channel.send('I disagree!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'mc! spam') {
+    	message.channel.send('spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam spam /n spam');
   	}
 });
 
