@@ -6,14 +6,6 @@ client.on('ready', () => {
     
 });
 
-client.on('message', function(test) {
-        client.sendMessage(message.author, "Hello!");
-});
-
-client.on('ready', () => {
-        client.setStatus('online', 'mc! help');
-});
-
 client.on('message', message => {
     if (message.content === 'mc! milk') {
     	message.channel.send('Here is a picture of some milk: https://goo.gl/upNXQ7');
