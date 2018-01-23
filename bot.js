@@ -21,7 +21,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc! uh') {
-    	message.channel.send('/tts uuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuh');
+    	message.channel.tts('uuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuh');
   	}
 });
 
