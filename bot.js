@@ -20,8 +20,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'mc! uh') {
+    	message.channel.send('/tts uuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuh');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'mc! help') {
-    	message.channel.send('```List of commands: \n mc! help: Displays this menu. \n mc! cookie: Displays a picture of a cookie. \n mc! milk: Displays a picture of milk. \n mc! version: Bot version. \n mc! info: Shows information about the bot. \n mc! discord: discord link. \n mc! agree: Make the bot agree. \n mc! disagree: Make the bot disagree. ```');
+    	message.channel.send('```List of commands: \n mc! help: Displays this menu. \n mc! cookie: Displays a picture of a cookie. \n mc! milk: Displays a picture of milk. \n mc! version: Bot version. \n mc! info: Shows information about the bot. \n mc! discord: discord link. \n mc! agree: Make the bot agree. \n mc! disagree: Make the bot disagree. /n ??????: secret command. ```');
   	}
 });
 
@@ -45,7 +51,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'mc! version') {
-    	message.channel.send('Version 0.18 A');
+    	message.channel.send('Version 0.2 A');
   	}
 });
 
